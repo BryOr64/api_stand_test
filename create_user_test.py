@@ -45,4 +45,6 @@ def negative_assert_no_first_name(user_body):
     response = sender_stant_request.post_new_user(user_body)
     assert response.status_code == 400
     assert response.json()["code"] == 400
+    """esto es una prueba para el commit tres"""
+
     #assert response.json()["message"] == "No se enviaron todos los parámetros necesarios"
